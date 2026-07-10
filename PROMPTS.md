@@ -1,0 +1,1 @@
+Design a responsive AI assistant section with a two-column layout, including text content on the left and a chat-style input box with suggestions on the right. Use modern UI elements like gradients, cards, and hover effects.
