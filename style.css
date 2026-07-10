@@ -1,11 +1,17 @@
-/* Reset */
+/* Reset style */
 *{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:"Inter", sans-serif;
   margin:0;
   padding:0;
   box-sizing:border-box;
   font-family:"Inter", sans-serif;
 }
 img{
+    max-width:100%; 
+    display:block;
     max-width:100%; 
     display:block;
 }
@@ -16,10 +22,17 @@ a{
 
 ul{
     list-style:none;
+    text-decoration:none;
 }
 
-/* Common */
+ul{
+    list-style:none;
+}
+
+/* Common style */
 .container{
+  max-width:1200px;
+  margin:0 auto;
   max-width:1200px;
   margin:0 auto;
 }
@@ -31,14 +44,26 @@ ul{
   padding:14px 28px;
   font-weight:600;
   cursor:pointer;
+  background:#2563EB;
+  color:#fff;
+  border:none;
+  border-radius:8px;
+  padding:14px 28px;
+  font-weight:600;
+  cursor:pointer;
 }
 
 .common-btn:hover{
   background:#1d4ed8;
+  background:#1d4ed8;
 }
 
-/* Navbar */
+/* Navbar style */
 nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:18px 0;
   display:flex;
   justify-content:space-between;
   align-items:center;
@@ -46,7 +71,10 @@ nav{
 }
 
 .logo img{width:165px;}
+.logo img{width:165px;}
 nav ul{
+  display:flex;
+  gap:35px;
   display:flex;
   gap:35px;
 }
@@ -54,17 +82,29 @@ nav ul{
 nav ul li a{
   color:#4B5563;
   font-size:15px;
+  color:#4B5563;
+  font-size:15px;
 }
 
 nav ul li a:hover{
   color:#2563EB;
+  color:#2563EB;
 }
 
-/* Hero */
+/* Hero style */
 .hero-section{
   background-image: linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.55)),
                     url("./assets/banner.jpg");
+  background-image: linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.55)),
+                    url("./assets/banner.jpg");
 
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height:720px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -78,15 +118,22 @@ nav ul li a:hover{
   max-width:760px;
   text-align:center;
   color:#fff;
+  max-width:760px;
+  text-align:center;
+  color:#fff;
 }
 
 .hero-content h1{
   font-size:72px;
   line-height:90px;
   margin-bottom:25px;
+  font-size:72px;
+  line-height:90px;
+  margin-bottom:25px;
 }
 
 .hero-content span{
+  font-style:italic;
   font-style:italic;
 }
 
@@ -96,10 +143,18 @@ nav ul li a:hover{
   color:#E5E7EB;
   font-size:20px;
   line-height:32px;
+  max-width:650px;
+  margin:0 auto 35px;
+  color:#E5E7EB;
+  font-size:20px;
+  line-height:32px;
 }
 
 /* Section Title (single use - duplicate removed) */
+/* Section Title (single use - duplicate removed) */
 .section-title{
+  text-align:center;
+  margin-bottom:60px;
   text-align:center;
   margin-bottom:60px;
 }
@@ -114,12 +169,15 @@ nav ul li a:hover{
   margin-bottom:12px;
 }
 
-/* Speakers */
+/* Speakers style */
 .speakers-section{
   padding:90px 0;
 }
 
 .speaker-container{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:30px;
   display:grid;
   grid-template-columns:repeat(2,1fr);
   gap:30px;
@@ -129,18 +187,27 @@ nav ul li a:hover{
   border:1px solid #E5E7EB;
   border-radius:16px;
   overflow:hidden;
+  border:1px solid #E5E7EB;
+  border-radius:16px;
+  overflow:hidden;
 }
 
 .speaker-card img{
+  height:340px;
+  object-fit:cover;
   height:340px;
   object-fit:cover;
 }
 
 .speaker-info{
   padding:25px;
+  padding:25px;
 }
 
 .speaker-info span{
+  color:#2563EB;
+  font-size:13px;
+  font-weight:600;
   color:#2563EB;
   font-size:13px;
   font-weight:600;
@@ -149,13 +216,15 @@ nav ul li a:hover{
 .speaker-info h3{
   font-size:24px;
   margin:8px 0;
+  font-size:24px;
+  margin:8px 0;
 }
 
 .speaker-info p{
   color:#6B7280;
 }
 
-/* Pricing */
+/* Pricing style */
 .pricing-section{
   padding:100px 0;
   background:#F8FAFC;
@@ -239,7 +308,7 @@ nav ul li a:hover{
   color:#2563EB;
 }
 
-/* Buttons */
+/* Buttons style */
 .outline-btn, .blue-btn, .outline-dark-btn{
   width:100%;
   padding:14px;
@@ -262,3 +331,5 @@ nav ul li a:hover{
   border:2px solid #0D1B2A;
   background:#fff;
 }
+
+/*Footer*/
