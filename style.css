@@ -340,142 +340,268 @@ nav ul li a:hover {
 
 
 
-/*-----AI Assistant Section Style----*/
+/*-----AI Section Style----*/
 
-  .ai-section {
-      padding: 100px 0;
-      background: linear-gradient(135deg, #f1f5f9, #e0ecff);
-    }
-    .ai-wrapper {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 60px;
+  /* Progress Section */
+  /*----- AI Hackathon Section Style -----*/
+
+.hackathon-section{
+    padding:100px 0;
+    background:linear-gradient(135deg,#F8FAFC,#EAF2FF,#DBEAFE);
+}
+
+.hackathon-wrapper{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:60px;
+}
+
+/* Left */
+
+.hackathon-left{
+    flex:1;
+}
+
+.hackathon-tag{
+    display:inline-block;
+    background:#DBEAFE;
+    color:#2563EB;
+    padding:8px 16px;
+    border-radius:20px;
+    font-size:13px;
+    font-weight:600;
+    margin-bottom:18px;
+}
+
+.hackathon-left h2{
+    font-size:42px;
+    color:#111827;
+    margin-bottom:20px;
+}
+
+.hackathon-left p{
+    color:#6B7280;
+    line-height:30px;
+    margin-bottom:35px;
+}
+
+/* Info Cards */
+
+.hackathon-info{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+    margin-bottom:35px;
+}
+
+.info-card{
+    background:#FFFFFF;
+    padding:22px;
+    border-radius:14px;
+    border:1px solid #E5E7EB;
+    transition:.3s;
+}
+
+.info-card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 12px 25px rgba(37,99,235,.10);
+}
+
+.info-card h4{
+    font-size:18px;
+    color:#111827;
+    margin-bottom:10px;
+}
+
+.info-card p{
+    margin:0;
+    color:#6B7280;
+    line-height:24px;
+}
+
+/* Right */
+
+.hackathon-right{
+    flex:1;
+    display:flex;
+    justify-content:center;
+}
+
+.dashboard-card{
+    width:100%;
+    max-width:430px;
+    background:#0F172A;
+    color:#FFFFFF;
+    border-radius:18px;
+    padding:35px;
+    box-shadow:0 20px 40px rgba(15,23,42,.25);
+}
+
+.dashboard-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:30px;
+}
+
+.dashboard-header h3{
+    font-size:26px;
+    font-weight:700;
+}
+
+.live-status{
+    background:#16A34A;
+    color:#FFFFFF;
+    padding:6px 12px;
+    border-radius:20px;
+    font-size:13px;
+    font-weight:600;
+}
+
+.dashboard-item{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:16px 0;
+    border-bottom:1px solid rgba(255,255,255,.15);
+}
+
+.dashboard-item span{
+    color:#CBD5E1;
+}
+
+.dashboard-item strong{
+    color:#FFFFFF;
+}
+
+.open-status{
+    color:#22C55E;
+}
+
+.progress-section{
+    margin:30px 0;
+}
+
+.progress-text{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:12px;
+}
+
+.progress-text span{
+    font-size:14px;
+    color:#CBD5E1;
+}
+
+.progress-bar{
+    width:100%;
+    height:10px;
+    background:rgba(255,255,255,.15);
+    border-radius:30px;
+    overflow:hidden;
+}
+
+.progress-fill{
+    width:89%;
+    height:100%;
+    background:linear-gradient(90deg,#2563EB,#60A5FA);
+    border-radius:30px;
+}
+
+/* Button */
+
+.dashboard-card .outline-btn{
+    width:100%;
+    margin-top:20px;
+    padding:15px;
+    border:2px solid #2563EB;
+    background:transparent;
+    color:#FFFFFF;
+    border-radius:10px;
+    font-size:16px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.dashboard-card .outline-btn:hover{
+    background:#2563EB;
+}
+
+/* Hover */
+
+.dashboard-card:hover{
+    transform:translateY(-6px);
+    transition:.3s;
+}
+
+.info-card:hover h4{
+    color:#2563EB;
+}
+
+/* Responsive */
+
+@media (max-width:992px){
+
+    .hackathon-wrapper{
+        flex-direction:column;
+        gap:50px;
     }
 
-    /* LEFT */
-    .ai-left {
-      flex: 1;
+    .hackathon-left,
+    .hackathon-right{
+        width:100%;
     }
 
-    .ai-tag {
-      background: #dbeafe;
-      color: #2563eb;
-      padding: 6px 14px;
-      border-radius: 20px;
-      font-size: 13px;
-      display: inline-block;
-      margin-bottom: 15px;
+    .dashboard-card{
+        max-width:100%;
     }
 
-    .ai-left h2 {
-      font-size: 42px;
-      margin-bottom: 20px;
-      color: #111827;
+}
+
+@media (max-width:768px){
+
+    .hackathon-section{
+        padding:70px 0;
     }
 
-    .ai-left h2 span {
-      color: #2563eb;
+    .hackathon-left h2{
+        font-size:32px;
     }
 
-    .ai-left p {
-      color: #6b7280;
-      margin-bottom: 25px;
-      line-height: 28px;
+    .hackathon-info{
+        grid-template-columns:1fr;
     }
 
-    .ai-features {
-      list-style: none;
+    .dashboard-header{
+        flex-direction:column;
+        gap:12px;
     }
 
-    .ai-features li {
-      margin-bottom: 12px;
-      color: #374151;
+    .dashboard-header h3{
+        font-size:22px;
     }
 
-    /* RIGHT BOX */
-    .ai-right {
-      flex: 1;
-      display: flex;
-      justify-content: center;
+}
+
+@media (max-width:576px){
+
+    .dashboard-card{
+        padding:25px;
     }
 
-    .ai-chat-box {
-      background: white;
-      padding: 35px;
-      border-radius: 16px;
-      width: 100%;
-      max-width: 400px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-      text-align: center;
-      transition: 0.3s;
+    .dashboard-item{
+        font-size:14px;
     }
 
-    .ai-chat-box:hover {
-      transform: translateY(-5px);
+    .progress-text span{
+        font-size:13px;
     }
 
-    .ai-chat-box h3 {
-      margin-bottom: 20px;
-      color: #111827;
+    .dashboard-card .outline-btn{
+        font-size:15px;
     }
 
-    .ai-chat-box input {
-      width: 100%;
-      padding: 14px;
-      border: 1px solid #d1d5db;
-      border-radius: 8px;
-      margin-bottom: 15px;
-    }
-
-    .ai-btn {
-      width: 100%;
-      background: #2563eb;
-      color: white;
-      border: none;
-      padding: 14px;
-      border-radius: 8px;
-      font-weight: 600;
-      cursor: pointer;
-    }
-
-    .ai-btn:hover {
-      background: #1d4ed8;
-    }
-
-    /* suggestions */
-    .ai-suggestions {
-      margin-top: 20px;
-    }
-
-    .ai-suggestions p {
-      font-size: 14px;
-      color: #6b7280;
-      margin-bottom: 10px;
-    }
-
-    .ai-suggestions span {
-      display: inline-block;
-      background: #f1f5f9;
-      padding: 6px 12px;
-      border-radius: 20px;
-      margin: 4px;
-      font-size: 13px;
-      cursor: pointer;
-    }
-
-    .ai-suggestions span:hover {
-      background: #2563eb;
-      color: white;
-    }
-
-    /* Responsive */
-    @media (max-width: 768px) {
-      .ai-wrapper {
-        flex-direction: column;
-      }
-
-      .ai-left h2 {
-        font-size: 30px;
-      }
-    }
+}
