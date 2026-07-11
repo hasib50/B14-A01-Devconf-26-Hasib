@@ -1,1 +1,1 @@
-Design a responsive AI assistant section with a two-column layout, including text content on the left and a chat-style input box with suggestions on the right. Use modern UI elements like gradients, cards, and hover effects.
+Design an AI assistant section with a two-column layout for a DevConf 2026 website. Include text content on the left and a chat-style input box with suggestions on the right. Use modern UI elements like gradients, cards, hover effects, and a blue color theme. Generate only HTML and CSS.
